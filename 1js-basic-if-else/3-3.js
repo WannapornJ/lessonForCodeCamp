@@ -11,3 +11,41 @@
    บัญชี
 
 */
+let name;
+let id;
+let totalDept;
+let checkName;
+let paymentAmount;
+let acceptPayment;
+
+id = prompt("โปรดกรอกหมายเลข id ที่คุณต้องการชำระ");
+
+if (id === "01") {
+  name = "A";
+  totalDept = 2000;
+}
+
+if (id === "02") {
+  name = "B";
+  totalDept = 3000;
+}
+
+if (id === "03") {
+  name = "C";
+  totalDept = 4000;
+}
+
+checkName = prompt(
+  "ยืนยันว่าคุณต้องการชำระธุระกรรมของ นาย" + name + "โปรดตอบว่า ใช่ หรือไม่ใช่"
+);
+
+if (checkName === "ใช่") {
+  alert("ยอดเงินค้างชำระรวม" + totalDept);
+  paymentAmount = prompt("โปรดระบุยอดเงินที่ต้องการชำระ");
+  acceptPayment = prompt("ยืนยันการชำระรึป่าว ตอบว่า ใช่ หรือไม่ใช่");
+}
+
+if (acceptPayment === "ใช่") {
+  alert("ยอดค้างชำระของคุณคงเหลือ" + (totalDept -= paymentAmount));
+  alert("ขอบคุณคุณ" + name + "ที่ชำระเงินเข้ามา");
+}
