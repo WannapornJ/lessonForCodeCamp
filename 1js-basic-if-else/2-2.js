@@ -16,22 +16,3 @@ let question1 = prompt(
   "What are you doing. Please enter learning, eating or playing  "
 );
 let question2;
-
-if (question1 === "learning") {
-  alert("great ");
-  question2 = prompt("what are you learn. Please enter javascript");
-} else if (question1 === "eating") {
-  alert("wow");
-  question2 = prompt("what are you eat. Please enter food");
-} else if (question1 === "playing") {
-  alert("oops");
-  question2 = prompt("what are you play? Please enter game");
-}
-
-if (question2 === "javascript") {
-  alert("cool");
-} else if (question2 === "food") {
-  alert("yummy");
-} else if (question2 === "game") {
-  alert("ohh");
-}

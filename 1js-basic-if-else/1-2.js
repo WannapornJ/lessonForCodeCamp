@@ -5,9 +5,9 @@
 */
 
 let bankAccount = 5000;
-let money;
+
 if (bankAccount === 5000) {
-  money = 3000;
+  let money = 3000;
 }
 
 bankAccount += money;

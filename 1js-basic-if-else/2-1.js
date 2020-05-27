@@ -8,11 +8,3 @@
 let question1 = prompt(
   "What are you doing. Please enter learning, eating or playing  "
 );
-
-if (question1 === "learning") {
-  alert("great ");
-} else if (question1 === "eating") {
-  alert("wow");
-} else if (question1 === "playing") {
-  alert("oops");
-}

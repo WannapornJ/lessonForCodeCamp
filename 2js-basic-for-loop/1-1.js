@@ -10,10 +10,6 @@ while (i < 5) {
   i++;
 }
 
-for (let i = 0; i < 5; i++) {
-  alert(i);
-}
-
 /* <<------------------------->>*/
 
 //2
@@ -28,12 +24,6 @@ while (i < b) {
   alert(i);
   i++;
 }
-let b = 30;
-let a = 10;
-
-for (let i = b - a; i < b; i++) {
-  alert(i);
-}
 
 /* <<------------------------->>*/
 
@@ -45,11 +35,4 @@ while (i < 5) {
   number += i * 2;
   alert(number);
   i++;
-}
-
-let number = 0;
-
-for (let i = 0; i < 5; i++) {
-  number += i * 2;
-  alert(number);
 }
