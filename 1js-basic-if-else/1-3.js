@@ -13,13 +13,7 @@ let moneyInYourPocket = 0;
 let inputYourPassword = prompt("Enter your password to take your money");
 let passwordBankAccount = 7789;
 
-console.log("this is inputYourPassword " + inputYourPassword);
-
-console.log(passwordBankAccount);
-
-console.log("hello this is above if");
 if (inputYourPassword === passwordBankAccount) {
-  console.log("this is in if");
   moneyInYourPocket += bankAccount; //กดเงินออกจากแบงค์เข้ากระเป๋า
   bankAccount -= moneyInYourPocket; //เงินในแบงค์ก็ต้องลดเท่ากับที่กดออกไป
 }
