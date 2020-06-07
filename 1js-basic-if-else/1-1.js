@@ -5,4 +5,10 @@
 let age = prompt("ใส่อายุของคุณห้ามโกหกนะ");
 let moneyInPocket = 3000;
 
+if (age < 18) {
+    moneyInPocket += 2000
+} else {
+    moneyInPocket += 1000
+}
+
 console.log(moneyInPocket);

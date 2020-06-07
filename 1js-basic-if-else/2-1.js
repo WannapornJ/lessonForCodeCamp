@@ -6,5 +6,13 @@
       3)  ถ้าตอบว่า playing ให้ alert ว่า oops */
 
 let question1 = prompt(
-  "What are you doing. Please enter learning, eating or playing  "
+    "What are you doing. Please enter learning, eating or playing  "
 );
+
+if (question1 == "learning") {
+    alert('great')
+} else if (question1 == "eating") {
+    alert('wow')
+} else if (question1 == "playing") {
+    alert('oops')
+}

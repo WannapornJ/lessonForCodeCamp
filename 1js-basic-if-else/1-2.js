@@ -6,10 +6,10 @@
 
 let bankAccount = 5000;
 
-if (bankAccount === 5000) {
-  let money = 3000;
+if (bankAccount == 5000) {
+    let money = 3000;
+    bankAccount += money;
 }
 
-bankAccount += money;
 
 console.log(bankAccount);

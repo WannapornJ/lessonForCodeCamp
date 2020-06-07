@@ -9,5 +9,23 @@ question 2 ให้ตอบกลับไปว่า food
 */
 
 let question1 = prompt(
-  "What are you doing. Please enter learning, eating or playing  "
+    "What are you doing. Please enter learning, eating or playing  "
 );
+let question2;
+
+if (question1 == "learning") {
+    question2 = prompt('Waht are you learn?')
+    if (question2 == "javascript") {
+        alert('cool')
+    }
+} else if (question1 == "eating") {
+    question2 = prompt('what are you eat?')
+    if (question2 == "food") {
+        alert('yummy')
+    }
+} else if (question1 == "playing") {
+    question2 = prompt('what are you play?')
+    if (question2 == "game") {
+        alert('ohh')
+    }
+}
