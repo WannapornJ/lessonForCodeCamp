@@ -30,3 +30,30 @@
     ให้ลองจัดวางตัวแปรด้วยตัวเอง
 
      */
+let deposit = prompt("enter your amount money"),
+    interestRate,
+    interest,
+    totalMoneyInBank;
+
+function calMoney(deposit, interestRate) {
+    interest = deposit * interestRate;
+    totalMoneyInBank = deposit + interest;
+    alert(`Your interest rate is ` + interestRate);
+    alert(`Your interest is ` + interest);
+    alert("Your total money in bank is " + totalMoneyInBank);
+}
+
+alert("Amount money : " + deposit);
+if (deposit < 1000) {
+    interestRate = 0.1;
+    calMoney(Number(deposit), interestRate);
+} else if (deposit < 2000) {
+    interestRate = 0.2;
+    calMoney(Number(deposit), interestRate);
+} else if (deposit < 3000) {
+    interest = 0.3;
+    calMoney(Number(deposit), interestRate);
+} else {
+    interest = 0.4;
+    calMoney(Number(deposit), interestRate);
+}

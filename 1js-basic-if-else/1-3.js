@@ -13,9 +13,10 @@ let moneyInYourPocket = 0;
 let inputYourPassword = prompt("Enter your password to take your money");
 let passwordBankAccount = 7789;
 
+inputYourPassword = Number(inputYourPassword)
 if (inputYourPassword === passwordBankAccount) {
-  moneyInYourPocket += bankAccount; //กดเงินออกจากแบงค์เข้ากระเป๋า
-  bankAccount -= moneyInYourPocket; //เงินในแบงค์ก็ต้องลดเท่ากับที่กดออกไป
+    moneyInYourPocket += bankAccount; //กดเงินออกจากแบงค์เข้ากระเป๋า
+    bankAccount -= moneyInYourPocket; //เงินในแบงค์ก็ต้องลดเท่ากับที่กดออกไป
 }
 
 alert("this is money in bank now" + bankAccount); //จะเห็นได้ว่า ตังเท่าเดิม

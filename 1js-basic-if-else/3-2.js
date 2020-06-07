@@ -26,3 +26,47 @@
  
 
 */
+let id = prompt("enter your id"),
+    password,
+    moneyInBank,
+    moneyInPocket = 0,
+    feeRate,
+    withdraw;
+
+function draw(name1, moneyInBank) {
+    alert(name1 + " " + moneyInBank)
+    withdraw = prompt("enter amount money that you want to withdraw");
+    alert("Your withdraw money is " + withdraw)
+    withdraw = Number(withdraw);
+    if (withdraw !== 0) {
+        if (withdraw < 1000) {
+            feeRate = 50
+        } else {
+            feeRate = 70
+        }
+    } else {
+        feeRate = 0
+    }
+    alert("Your fee rate is " + feeRate)
+    moneyInPocket = withdraw;
+    moneyInBank = moneyInBank - (feeRate + withdraw);
+    alert("Your money in your pocket is " + moneyInPocket);
+    alert("Your money in your bank account is " + moneyInBank);
+}
+
+if (id == "01" || id == "02" || id == "03") {
+    password = prompt("enter your password");
+    if (password == "123" && id == "01") {
+        name1 = "A";
+        moneyInBank = 2000;
+        draw(name1, moneyInBank);
+    } else if (password == "456" && id == "02") {
+        name1 = "b";
+        moneyInBank = 3000;
+        draw(name1, moneyInBank);
+    } else if (password == "789" && id == "03") {
+        name1 = "c";
+        moneyInBank = 4000;
+        draw(name1, moneyInBank);
+    }
+}

@@ -11,3 +11,38 @@
    บัญชี
 
 */
+
+let id, name1, amount, debtBalance, paid, balance;
+
+id = prompt('enter your invoice id');
+
+function pay(debtBalance) {
+    paid = prompt('please enter your amount money to paid this debt');
+    if (paid <= debtBalance) {
+        let conPaid = confirm("press ok to confirm the payment")
+        if (conPaid == true) {
+            balance = debtBalance - paid;
+            alert("Your debt balance is " + balance);
+            alert("Thank you for your payment");
+        } else {
+            alert('payment cancel!!')
+        }
+    }
+}
+
+if (id == 01 || id == 02 || id == 03) {
+    name1 = prompt('enter your name');
+    if (name1 == "A" && id == 01) {
+        debtBalance = 2000
+        alert("your outstanding balance is " + debtBalance);
+        pay(debtBalance);
+    } else if (name1 == "B" && id == 02) {
+        debtBalance = 3000
+        alert("your outstanding balance is " + debtBalance);
+        pay(debtBalance);
+    } else if (name1 == "C" && id == 03) {
+        debtBalance = 4000
+        alert("your outstanding balance is " + debtBalance);
+        pay(debtBalance);
+    }
+}
