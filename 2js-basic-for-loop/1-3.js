@@ -25,16 +25,18 @@ let listOfLoseDish = "";
 
 let finishWork = prompt("เลิกงานรึยัง โปรดตอบ ใช่ หรือ ไม่ใช่");
 
-if (finishWork === "ใช่") {
-  loseDishOrNot = prompt("วันนี้จานแตกรึป่าว โปรดตอบ ใช่ หรือ ไม่ใช่");
-  if (loseDishOrNot === "ใช่") {
-    let totalCountLose = +prompt("แตกทั้งหมดกี่ใบ");
-    for (let i = 1; i <= totalCountLose; i++) {
-      let eachNumberOfLose = prompt("บอกหมายเลขที่จานแตก");
+if (finishWork == "ใช่") {
+    loseDishOrNot = prompt("วันนี้จานแตกรึป่าว โปรดตอบ ใช่ หรือ ไม่ใช่");
+    if (loseDishOrNot == "ใช่") {
+        totalCountLose = Number(prompt("แตกทั้งหมดกี่ใบ"));
+        for (let i = 0; i < totalCountLose; i++) {
+            let eachNumberOfLose = prompt("บอกหมายเลขที่จานแตก");
 
-      listOfLoseDish += "," + eachNumberOfLose;
+            listOfLoseDish += " " + eachNumberOfLose;
+        }
+        alert("หมายเลขจานที่แตกทั้งหมด" + listOfLoseDish);
+        alert("มีจานเหลือภายในร้าน" + (totalDish - totalCountLose));
     }
-  }
-  alert("หมายเลขจานที่แตกทั้งหมด" + listOfLoseDish);
-  alert("มีจานเหลือภายในร้าน" + (totalDish - totalCountLose));
+} else {
+    alert('โปรดกลับไปทำงานของคุณ!');
 }

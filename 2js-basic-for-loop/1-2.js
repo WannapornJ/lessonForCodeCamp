@@ -10,7 +10,7 @@ let star = "";
 let review = Number(prompt("โปรดให้รีวิว โดยบอกจำนวนดาวที่จะให้"));
 
 for (let i = 0; i < review; i++) {
-  star + "*";
+    star += "*";
 }
 
 console.log(star);
